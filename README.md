@@ -1,6 +1,6 @@
 # Rust docker onbuild
 
-> Make rust build **simple** & **fast**
+> Make rust build **simple** & **fast** 🚀
 
 ## Usage:
 
