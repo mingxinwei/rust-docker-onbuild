@@ -11,7 +11,7 @@
 ## Usage
 
 ```Dockerfile
-# Fist stage build
+# First stage build
 FROM shuataren/rust-onbuild:1.37.0 AS builder
 
 # Second stage which generates the final small image
