@@ -1,14 +1,20 @@
 # Rust docker onbuild
 
-> Make rust build **simple** & **fast** 🚀
+> Make rust docker build **simple** & **fast** 🚀
 
-## Usage:
+## Features
+
+- Leverage docker cache to make image build as fast as possible.
+- Generate small image.
+- Make it easy to write your project's Dockerfile.
+
+## Usage
 
 ```Dockerfile
 # Fist stage build
 FROM shuataren/rust-onbuild:1.37.0 AS builder
 
-# Final image
+# Second stage which generates the final small image
 FROM alpine:latest
 COPY --from=builder /myapp/myapp .
 CMD ["./myapp"]

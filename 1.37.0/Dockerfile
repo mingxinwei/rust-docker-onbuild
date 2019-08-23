@@ -3,6 +3,7 @@ FROM rust:1.37.0
 RUN apt-get update
 RUN apt-get install musl-tools -y
 
+
 RUN rustup target add x86_64-unknown-linux-musl
 
 RUN USER=root cargo new myapp
